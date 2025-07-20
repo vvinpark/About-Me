@@ -189,7 +189,7 @@ html, body {
 }
 
 #flip div:first-child {
-  animation: show 5s linear infinite;
+  animation: show 5s ease-out infinite;
 }
 
 #flip div div {
@@ -204,12 +204,12 @@ html, body {
 
 @keyframes show {
   0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
+  5% {margin-top:-130px;}
+  33% {margin-top:-130px;}
+  38% {margin-top:-60px;}
+  66% {margin-top:-60px;}
+  71% {margin-top:-5px;}
+  99.99% {margin-top:-5px;}
   100% {margin-top:-270px;}
 }
 
