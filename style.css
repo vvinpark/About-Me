@@ -1,0 +1,271 @@
+/*GLOBAL STYLING IS LOCATED HERE */
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*NAVIGATION STYLING GOES HERE */
+
+.nav-links {
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+    justify-content: center;
+    color: red;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.header-logo-text {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 20px;
+    color: pink;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+    background-color: #aaaaaa;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+.header-logo-text {
+    font-family: "Fascinate Inline", system-ui;
+}
+
+/*GENERAL LINK STYLING GOES HERE */
+
+a:link {
+    color: red;
+    font-family: "Quicksand", sans-serif;
+}
+
+a:visited {
+    color:rgb(85, 131, 131);
+}
+
+a:hover {
+    color: cyan;
+}
+
+a:active {
+    color: hotpink;
+}
+
+/*BODY TEXT STYLES GO HERE */
+
+p {
+    margin: 20px;
+    font-family: "Quicksand", sans-serif;
+}
+
+/*FONT CHOICES GO HERE */
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fascinate-inline-regular {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*IMG LOGO STYLING GOES HERE*/
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    display: flex;
+}
+
+/*MOBILE STYLING FOR ELEMENTS*/
+
+@media (max-width: 600px) {
+    .header-logo {
+        width: 60px;
+        margin: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    .header-logo-text {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    nav ul {
+        flex-direction: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .nav-links {
+        display: block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*BODY STYLING GOES HERE */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    min-height: calc(100vh-120px);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 60%;
+    background-color: rgb(168, 154, 154);
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*SPECIAL FLIP STYLING GOES HERE */
+
+#flip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  position: static; /* Remove fixed positioning */
+  width: auto;
+  padding-top: 20px;
+}
+
+.flip-static {
+  margin-right: 16px;
+  font-size: 2rem;
+}
+
+#flip {
+  height: 45px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:40px;
+  margin-bottom:45px;
+  display:inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+/*GENERAL FOOTER STYLING GOES HERE */
+
+#footer {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-top: 2px solid #000;
+    background-color: #3d3d3d;
+}
+
+.footer-logo-text {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: lavender;
+    font-family: "Fascinate Inline", system-ui;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.footer-p {
+    color: #8f8f8f;
+}
+
+/*FOOTER LINKS STYLING CAN GO HERE */
+
+.footer-links {
+    padding: 10px 30px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    list-style: none;
+}
