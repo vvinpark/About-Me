@@ -233,7 +233,7 @@ html, body {
 /*STYLING FOR THE ROLLOVER IMAGE GOES HERE*/
 
 #heroimage1 {
-	max-width: 70%;
+	max-width: 100%;
 	height: auto;
 }
 
