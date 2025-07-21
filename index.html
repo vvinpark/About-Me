@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Vin</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Quicksand:wght@300..700&display=swap"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Vin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+    <script type="text/javascript">
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+    </script>
 </head>
 
 <body onLoad="MM_preloadImages('images/image2.png')">
-<header class="header-container"> <img src="images/Logo.png" alt="Vin's Logo" class="header-logo">
-  <h1 class="header-logo-text">Vin Park</h1>
-  <nav>
-    <ul>
-      <li class="nav-links"><a href="#">Link 1</a></li>
-      <li class="nav-links"><a href="#">Link 2</a></li>
-      <li class="nav-links"><a href="#">Link 3</a></li>
-      <li class="nav-links"><a href="#">Link 4</a></li>
-    </ul>
-  </nav>
-</header>
-<div class="page-wrapper">
-  <div class="main-content">
-    <div id="flip-container"> <span class="flip-static">Vin Park is an...</span> <span id="flip">
-      <div>
-        <div>designer</div>
-      </div>
-      <div>
-        <div>illustrator</div>
-      </div>
-      <div>
-        <div>creative</div>
-      </div>
-      </span> </div>
-    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('heroimage1','','images/image2.png',1)"><img src="images/image1.png" alt="Rollover for the index splash image." width="1365" height="1253" id="heroimage1"></a>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quis ipsum sit amet tristique.
-      Mauris sit amet maximus odio,
-      id tristique justo. Nunc id vehicula dolor, vel sagittis ipsum. Vivamus aliquam, ante consectetur
-      bibendum feugiat, neque urna condimentum nunc,
-      at molestie nulla nibh ac urna. Duis facilisis suscipit lacus, at elementum lacus convallis ac.
-      Phasellus pulvinar, felis nec vehicula accumsan,
-      felis neque egestas ipsum, at porttitor risus nulla non nisl. Mauris elementum felis nulla, non
-      condimentum libero faucibus sed.
-      Sed malesuada lorem orci, non bibendum nisi dignissim ac. Nulla interdum sem id dolor lobortis
-      dignissim.</p>
-  </div>
-</div>
-<footer>
-  <div class="footer-container"> <img src="images/Logo.png" alt="Vin's Logo" class="footer-logo">
-    <h1 class="footer-logo-text">Vin's Awesome Website</h1>
-    <p class="footer-p">We have some fun text here about my footer but not really much.</p>
-    <ul class="footer-links-container">
-      <li class="footer-links"><a href="#">Link 1</a></li>
-      <li class="footer-links"><a href="#">Link 2</a></li>
-      <li class="footer-links"><a href="#">Link 3</a></li>
-      <li class="footer-links"><a href="#">Link 4</a></li>
-    </ul>
-  </div>
-</footer>
+    <header class="header-container"> <img src="images/Logo.png" alt="Vin's Logo" class="header-logo">
+        <h1 class="header-logo-text">Vin Park</h1>
+        <nav>
+            <ul>
+                <li class="nav-links"><a href="#">What's in my Bag</a></li>
+                <li class="nav-links"><a href="#">Hobbies & Interests</a></li>
+                <li class="nav-links"><a href="#">Inspirations</a></li>
+                <li class="nav-links"><a href="#">Growth</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <div class="main-content">
+            <div id="flip-container"> <span class="flip-static">Vin Park is a...</span> <span id="flip">
+                    <div>
+                        <div>designer</div>
+                    </div>
+                    <div>
+                        <div>illustrator</div>
+                    </div>
+                    <div>
+                        <div>wanderer</div>
+                    </div>
+                </span> </div>
+            <a href="#" onMouseOut="MM_swapImgRestore()"
+                onMouseOver="MM_swapImage('heroimage1','','images/image2.png',1)"><img src="images/image1.png"
+                    alt="Rollover for the index splash image." width="1365" height="1253" id="heroimage1"></a>
+            <p> Hey there! My name is Vin (they/them) and I’m a Korean/American Product Designer and Illustrator with a
+                focus on accessibility and sustainability.
+
+
+            <p>I’ve always viewed art and design as a form of communication between me and the viewer. It has helped me
+                translate my thoughts and experiences into a webpage, an illustration, or a logo just to name a few! My
+                workflow and style are always constantly evolving as time passes and I grasp new skills and concepts. To
+                that end, I think I’ll always see myself as a both the student and teacher with each new project.</p>
+
+
+            <p>In my free time I love sketching out or browsing fashion ideas on Pinterest or Instagram, while also
+                watching cooking and home tour videos in the background. My ever growing interests always lead me to
+                meeting new people and adding to my skillset as time goes on and I couldn’t be more thankful for all the
+                wonderful people in my life!</p>
+
+
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container"> <img src="images/Logo.png" alt="Vin's Logo" class="footer-logo">
+            <h1 class="footer-logo-text">Vin Park</h1>
+            <h2>"The world is lucky to be your home."</h2>
+            <p class="footer-p">Thank you for visiting my extended about me page!</p>
+            <ul class="footer-links-container">
+                <li class="footer-links"><a href="#">What's in my Bag</a></li>
+                <li class="footer-links"><a href="#">Hobbies & Interests</a></li>
+                <li class="footer-links"><a href="#">Inspirations</a></li>
+                <li class="footer-links"><a href="#">Growth</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

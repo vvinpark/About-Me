@@ -34,7 +34,7 @@
     justify-content: space-between;
     padding: 20px;
     border-bottom: 4px solid #453e3e;
-    background-color: #F5EDED;
+    background: rgba(245, 237, 237, 1);
     position: sticky;
     top:0;
     z-index: 100;
@@ -48,20 +48,21 @@
 /*GENERAL LINK STYLING GOES HERE */
 
 a:link {
-    color: red;
+    color: #ca2727;;
     font-family: "Quicksand", sans-serif;
+    text-decoration: none;
 }
 
 a:visited {
-    color:rgb(85, 131, 131);
+    color:#9b1313;
 }
 
 a:hover {
-    color: cyan;
+    color: #853f3f;
 }
 
 a:active {
-    color: hotpink;
+    color: #ca6565;
 }
 
 /*BODY TEXT STYLES GO HERE */
@@ -69,6 +70,15 @@ a:active {
 p {
     margin: 20px;
     font-family: "Quicksand", sans-serif;
+}
+
+/*HEADER TEXT STYLES*/
+
+h2 {
+    font-size: 1.53rem;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 20px;
+    color: #b89090;
 }
 
 /*FONT CHOICES GO HERE */
@@ -153,7 +163,7 @@ html, body {
     text-align: center;
     padding: 20px;
     max-width: 60%;
-    background-color: rgba(255,255,255,1.00);
+    background-color: #fff;
 }
 
 .page-wrapper {
@@ -200,10 +210,10 @@ html, body {
 }
 
 #flip div div {
-  background:#42c58a;
+  background:#d1af15;
 }
 #flip div:first-child div {
-  background:#4ec7f3;
+  background:#2ca8d4;
 }
 #flip div:last-child div {
   background:#DC143C;
@@ -230,7 +240,7 @@ html, body {
 /*GENERAL FOOTER STYLING GOES HERE */
 
 #footer {
-    max-width: 60%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -247,17 +257,18 @@ html, body {
 
 .footer-logo-text {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 20px;
     color: lavender;
     font-family: "Fascinate Inline", system-ui;
 }
 
 .footer-links-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
     justify-content: center;
-    padding: 0px;
+    padding-bottom: 20px;
     margin: 0;
     list-style: none;
     align-items: center;
@@ -271,7 +282,7 @@ html, body {
 }
 
 .footer-p {
-    color: #8f8f8f;
+    color: #969696;
 }
 
 /*FOOTER LINKS STYLING CAN GO HERE */
@@ -279,7 +290,24 @@ html, body {
 .footer-links {
     padding: 10px 30px;
     margin: 10px;
-    border: 2px solid #000;
+    border: 4px solid #474747;
     border-radius: 20px;
     list-style: none;
+}
+
+.footer-links-container a:link {
+    color: #fff;
+}
+
+.footer-links-container a:visited {
+    color: #aa8a8a;
+}
+
+.footer-links-container a:hover {
+    color: #ECDFDF;
+    background-color: #4d4343;
+}
+
+.footer-links-container a:active {
+    color: #a76c6c;
 }
