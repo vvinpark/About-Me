@@ -521,11 +521,7 @@ h2 {
 
 #slide1:checked ~ .slider-nav label[for="slide1"],
 #slide2:checked ~ .slider-nav label[for="slide2"],
-#slide3:checked ~ .slider-nav label[for="slide3"],
-#slide4:checked ~ .slider-nav label[for="slide4"],
-#slide5:checked ~ .slider-nav label[for="slide5"],
-#slide6:checked ~ .slider-nav label[for="slide6"],
-#slide7:checked ~ .slider-nav label[for="slide7"] {
+#slide3:checked ~ .slider-nav label[for="slide3"] {
   background: #ca2727;
 }
 
@@ -549,7 +545,7 @@ h2 {
 
 .HAI-images {
     height: auto;
-    max-width: 50%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
