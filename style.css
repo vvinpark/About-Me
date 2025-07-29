@@ -579,7 +579,25 @@ h2 {
     margin-bottom: 40px;
 }
 .hai-list li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+/*STYLING FOR THE GROWTH PAGE GOES HERE */
+
+.Growth-hero {
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: block;
+}
+
+.Growth-images {
+    height: auto;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    display: block;
 }
 
 /*GENERAL FOOTER STYLING GOES HERE */
