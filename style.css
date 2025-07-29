@@ -235,12 +235,21 @@ html, body {
   100% {margin-top:-270px;}
 }
 
-/*STYLING FOR THE ROLLOVER IMAGE GOES HERE*/
+/*STYLING FOR THE ROLLOVER IMAGE ON THE INDEX PAGE GOES HERE*/
 
 #heroimage1 {
 	max-width: 100%;
 	height: auto;
 	margin-top: 50px;
+}
+
+/*STYLING FOR THE WHAT'S IN MY BAG GALLERY GOES HERE*/
+
+.WIMB-header1 {
+    font-size: 3rem;
+    font-family: "Fascinate Inline", system-ui;
+    padding: 100px 0;
+    text-align: center;
 }
 
 /*GENERAL FOOTER STYLING GOES HERE */
