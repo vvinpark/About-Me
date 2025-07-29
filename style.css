@@ -305,7 +305,7 @@ h2 {
   align-items: center;
   justify-content: center;
   font-family: "Quicksand", sans-serif;
-  position: static; /* Remove fixed positioning */
+  position: static;
   width: auto;
   padding-top: 20px;
 }
@@ -595,6 +595,14 @@ h2 {
     margin-right: auto;
     align-content: center;
     display: block;
+}
+
+.Growth-p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 40px 0;
 }
 
 /*GENERAL FOOTER STYLING GOES HERE */
