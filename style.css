@@ -145,10 +145,53 @@ h2 {
         text-align: center;
 		box-sizing: border-box;
     }
+
+    .footer-links {
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 	
 	#flip-container {
 		display: block !important;
 	}
+
+    .WIMB-items {
+        min-width: 180px;
+        width: 100%;
+        max-width: 90vw;
+        flex: none;
+    }
+
+    .WIMB-leftcol-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .WIMB-left-col-img,
+    .WIMB-right-col-text {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    .WIMB-rightcol-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .WIMB-right-col-img,
+    .WIMB-left-col-text {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
 }
 
 /*BODY STYLING GOES HERE */
@@ -250,6 +293,64 @@ html, body {
     font-family: "Fascinate Inline", system-ui;
     padding: 100px 0;
     text-align: center;
+}
+
+.WIMB-leftcol-img-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 20px;
+}
+
+.WIMB-items {
+    max-width: 100%;
+    flex: 0 0 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+}
+
+.WIMB-right-col-text {
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    text-align: left;
+    margin: 0;
+}
+
+.WIMB-rightcol-img-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    background-color: green;
+    margin-top: 20px;
+}
+
+.WIMB-items {
+    max-width: 100%;
+    flex: 0 0 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+}
+
+.WIMB-left-col-text {
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    text-align: left;
+    margin: 0;
 }
 
 /*GENERAL FOOTER STYLING GOES HERE */
