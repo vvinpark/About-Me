@@ -36,6 +36,20 @@
                 if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
         }
     </script>
+    <script>
+        const images = [
+            "images/WIMB-hero.png",
+            "images/inspiration2.jpg",
+            "images/inspiration3.jpg"
+        ];
+        let current = 0;
+        const imgElement = document.getElementById("inspiration-slide");
+
+        setInterval(() => {
+            current = (current + 1) % images.length;
+            imgElement.src = images[current];
+        }, 3000); // Change image every 3 seconds
+    </script>
 </head>
 
 <body onLoad="MM_preloadImages('images/image2.png')">
@@ -51,27 +65,20 @@
             </ul>
         </nav>
     </header>
+
     <div class="page-wrapper">
         <div class="main-content">
-            <h1>What's in my Bag?</h1>
-            <img src="images/WIMB-hero.png" alt="Hero Image for WIMB" class="WIMB-hero-image">
-            <p style="padding: 100px 0">One of my favorite category of movies to watch on YouTube is a genre called "What's in my Bag." I didn't
-                understand the reason at first, until I realized that everyone carries their own unique story in their
+            <h1>Growth</h1>
+            <p class="HAI-p">I have a variety of interests including custom keyboard
+                construction, arcade gaming (particularly rhythm gaming), and illustration! I seem to pick up a new one
+                every
+                single day so enjoy seeing some of my work!</p>
+            <p class="HAI-p">One of my favorite category of movies to watch on YouTube is a genre
+                called
+                "What's in my Bag." I didn't understand the reason at first, until I realized that everyone carries
+                their own
+                unique story in their
                 bag. It could be an attending student, or it could be an office worker who has a 9-5. </p>
-            <div class="WIMB-leftcol-img-container">
-                <div class="WIMB-left-col-img"><img src="images/item-1.png" alt="Vin's Hairclip" class="WIMB-items">
-                </div>
-                <p class="WIMB-right-col-text">This is my description of the first item. This first item has some
-                    interesting relevance. I will continue to write random shit here until it makes sense to make up for
-                    all this damn space anyways blah blah blah.</p>
-            </div>
-            <div class="WIMB-rightcol-img-container">
-                <p class="WIMB-left-col-text">This is my description of the first item. This first item has some
-                    interesting relevance. I will continue to write random shit here until it makes sense to make up for
-                    all this damn space anyways blah blah blah.</p>
-                <div class="WIMB-right-col-img"><img src="images/item-1.png" alt="Vin's Hairclip" class="WIMB-items">
-                </div>
-            </div>
         </div>
     </div>
     <footer>
@@ -88,5 +95,4 @@
         </div>
     </footer>
 </body>
-
 </html>
