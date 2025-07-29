@@ -536,6 +536,52 @@ h2 {
     padding-bottom: 60px;
 }
 
+/*HOBBIES AND INTERESTS STYLING GOES HERE */
+
+.HAI-p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 40px 0;
+}
+
+.HAI-images {
+    height: auto;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    display: block;
+}
+
+.HAI-hero {
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: block;
+}
+
+.hai-list {
+    text-align: left;
+    max-width: 500px;
+    margin: 20px auto 20px 0;
+    padding-left: 32px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    list-style-type: circle;
+    border-radius: 20px;
+    border: 2px solid #474747;
+    padding: 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.hai-list li {
+    margin-bottom: 8px;
+}
+
 /*GENERAL FOOTER STYLING GOES HERE */
 
 #footer {
