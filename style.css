@@ -202,6 +202,21 @@ html, body {
     padding: 0;
 }
 
+h1 {
+    font-size: 3rem;
+    font-family: "Fascinate Inline", system-ui;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Quicksand", sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
 .main-content {
     min-height: calc(100vh - 120px);
     display: flex;
@@ -218,6 +233,67 @@ html, body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/*CONTACT FORM STYLING GOES HERE*/
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.contact-me p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.contact-me label {
+    text-align: left;
+    margin-bottom: 4px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contact-me input,
+.contact-me textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.contact-me button {
+    background-color: #453e3e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+.contact-me button:hover {
+    background-color: #ca2727;
+}
+
+.contact-me input:focus,
+.contact-me textarea:focus,
+.contact-me button:focus {
+    outline: 2px solid #453e3e;
+    border-color: #453e3e;
+    background-color: #f9ecec;
 }
 
 /*SPECIAL FLIP STYLING GOES HERE */
@@ -288,13 +364,6 @@ html, body {
 
 /*STYLING FOR THE WHAT'S IN MY BAG GALLERY GOES HERE*/
 
-.WIMB-header1 {
-    font-size: 3rem;
-    font-family: "Fascinate Inline", system-ui;
-    padding: 100px 0;
-    text-align: center;
-}
-
 .WIMB-leftcol-img-container {
     display: flex;
     align-items: center;
@@ -351,6 +420,31 @@ html, body {
     background-color: red;
     text-align: left;
     margin: 0;
+}
+
+.WIMB-hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/*STYLING FOR THE INSPIRATIONS GALLERY GOES HERE*/
+
+.inspirations-gallery-rotating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.inspirations-gallery-rotating img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /*GENERAL FOOTER STYLING GOES HERE */
