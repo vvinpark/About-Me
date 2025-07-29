@@ -222,7 +222,8 @@ h2 {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
     padding: 20px;
     max-width: 60%;
@@ -429,145 +430,111 @@ h2 {
 
 /*STYLING FOR THE INSPIRATIONS GALLERY GOES HERE*/
 
-/* Beginning CSS for the Slider */
-.slider-container {
-	width: 100%;
-	max-width: 1024px;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-	user-select: none;
-}
-.sr-only {
-	position: absolute;
-	pointer-events: none;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	color: transparent;
-}
-input {
-	position: absolute;
-	opacity: 0;
-	margin-top: 55%;
-	cursor: pointer;
-}
-/* height of the radio buttons*/
-label {
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	border: solid 2px white;
-	border-radius: 999px;
-	background-color: transparent;
-	margin: 55% 6px 0 6px;
-	z-index: 2;
-	cursor: pointer;
-	transition-duration: .4s;
-	box-shadow: 0 0 20px 0 #000;
-}
-input:checked + label {
-	background-color: white;
-}
-input + label::after {
-	content: "";
-	background-image: url("images/left-arrow.png");
-	background-repeat: no-repeat;
-	background-position: center 50%;
-	background-size: 80px 80px;
-	line-height: 100vh;
-	transition: background-size 200ms;
-	position: absolute;
-	color: white;
-	height: calc(65vh - 12px);
-	width: 80px;
-	top: 0;
-	left: 40px;
-	z-index: 20;
-}
-@media only screen and (max-width: 420px) {
-  input + label::after {
-	background-size: 50px 50px;
-	height: calc(30vh - 12px);
-	width: 50px;
-	top: 0;
-	left: 10px;
-  }
-}
-input + label:hover::after {
-	background-size: 80px 80px;
-}
-input:checked + label::after {
-	background-image: none;
-	width: 100vw;
-	left: 0;
-	z-index: 10;
-}
-input:checked + label + .slide ~ input + label::after {
-	display: none;
-}
-input:checked + label + .slide + input + label::after {
-	background-image: url("images/right-arrow.png");
-	display: block;
-	width: 80px;
-	right: 0;
-	left: auto;
-}
-input:focus + label {
-	box-shadow: 0 0 0 2px teal, 0 0 0 18px white;
-}
-.slide {
-	position: absolute;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	transform: translateX(-100%);
-	transition-duration: .2s;
-	opacity: 1;
-}
-input:checked ~ .slide {
-	transform:translateX(100%);
-}
-input:checked + label + .slide {
-	transform:translateX(0);
-	opacity: 1;
-}
-.slide p {
-	color: #fff;
-	font-family: Arial, sans-serif;
-	font-size: 1.25rem;
-	padding-top: 20px;
-	text-shadow: 2px 2px #000;
+.inspiration-p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 40px 0;
 }
 
-/*Images of the sliders*/
-.bg1 {
-  background-image: url("images/great-wall-of-china.jpg");
+.inspirations-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 40px auto;
+  padding: 40px 0;
 }
-.bg2 {
-  background-image: url("images/petra.jpg");
+
+.inspirations-slider input[type="radio"] {
+  display: none;
 }
-.bg3 {
-  background-image: url("images/chichen-itza.jpg");
+
+.slides {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
 }
-.bg4 {
-  background-image: url("images/christ-the-redeemer.jpg");
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.bg5 {
-  background-image: url("images/colosseum.jpg");
+
+.slide img {
+  width: 100%;
+  max-height: 1000px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-.bg6 {
-  background-image: url("images/machu-picchu.jpg");
+
+.slide p {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  color: #333;
+  background: rgba(255,255,255,0.8);
+  padding: 6px 16px;
+  border-radius: 8px;
 }
-.bg7 {
-  background-image: url("images/taj-mahal.jpg");
+
+#slide1:checked ~ .slides .s1,
+#slide2:checked ~ .slides .s2,
+#slide3:checked ~ .slides .s3,
+#slide4:checked ~ .slides .s4,
+#slide5:checked ~ .slides .s5,
+#slide6:checked ~ .slides .s6,
+#slide7:checked ~ .slides .s7 {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
 }
-/* End of style for the slider */
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slider-nav label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 0;
+}
+
+#slide1:checked ~ .slider-nav label[for="slide1"],
+#slide2:checked ~ .slider-nav label[for="slide2"],
+#slide3:checked ~ .slider-nav label[for="slide3"],
+#slide4:checked ~ .slider-nav label[for="slide4"],
+#slide5:checked ~ .slider-nav label[for="slide5"],
+#slide6:checked ~ .slider-nav label[for="slide6"],
+#slide7:checked ~ .slider-nav label[for="slide7"] {
+  background: #ca2727;
+}
+
+/*SPOTIFY PLAYER STYLING GOES HERE */
+.spotify-embed {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding-bottom: 60px;
+}
 
 /*GENERAL FOOTER STYLING GOES HERE */
 
